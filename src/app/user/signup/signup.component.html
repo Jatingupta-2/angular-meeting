@@ -1,0 +1,48 @@
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="firstName">First Name</label>
+      <input type="firstName" class="form-control" name="firstName" id="firstName" [(ngModel)]="firstName"  placeholder="firstName">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="LastName">LastName</label>
+      <input type="LastName" class="form-control" name="lastName" id="LastName" [(ngModel)]="lastName" placeholder="LastName">
+    </div>
+  </div>
+  <div class="form-row">
+      <div class="form-group col-md-4">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" name="email" id="inputEmail4" [(ngModel)]="email" placeholder="Email">
+        </div>
+  
+</div>
+
+<div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox" name="admin" id="admin" [(ngModel)]="admin">Check me if you are Admin</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+      <div class="form-group col-md-1">
+          <label for="countryCode">CountryCode</label>
+          <input type="text" class="form-control" name="countryCode" id="countryCode" [(ngModel)]="countryCode" placeholder="91">
+        </div>
+        <div class="form-group col-md-0.5"></div>
+        <div class="form-group col-md-5">
+            <label for="Mobile">Mobile</label>
+            <input type="text" class="form-control" name="mobile" id="Mobile" [(ngModel)]="mobile" placeholder="Mobile">
+          </div>
+    
+  </div>
+  <div class="form-row">
+  <div class="form-group col-md-5">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" name="pass" id="inputPassword4" [(ngModel)]="password" placeholder="Password">
+    </div>
+  </div>
+  
+  <button type="submit" class="btn btn-primary" (click)="signup()">Sign Up</button>
+  
+</form>

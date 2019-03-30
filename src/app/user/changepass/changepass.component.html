@@ -1,0 +1,10 @@
+<form>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">New Password</label>
+    <input type="password" class="form-control" name="newPassword"
+    id="exampleInputPassword1" placeholder="Password" [(ngModel)]="newPassword">
+  </div>
+  
+  <button type="submit" class="btn btn-primary" (click)="editPassword()">Change Password</button>
+</form>
