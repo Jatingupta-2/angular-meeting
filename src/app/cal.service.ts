@@ -10,7 +10,7 @@ import {HttpClient,HttpHeaders,HttpParams,HttpErrorResponse} from '@angular/comm
 })
 export class CalService {
 
-  private url='http://localhost:3000';
+  private url='http://api.jatingupta.xyz';
   constructor(private http:HttpClient) { }
 
   public addEvent=(data):Observable<any>=>{
